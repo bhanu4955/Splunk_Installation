@@ -6,16 +6,16 @@ INSTALL_DIR="/opt/splunk"
 #SPLUNK_PASSWORD="bhargavi23"
 
 # Create the installation directory
-#mkdir -p $INSTALL_DIR
+sudo mkdir -p $INSTALL_DIR
 
 # Download Splunk
 curl -O $SPLUNK_URL
 
 # Extract Splunk
-tar -xzf splunk-*.tgz -C /opt/splunk --strip-components=1
+sudo tar -xzf splunk-*.tgz -C /opt/splunk --strip-components=1
 
 # Start Splunk with username and password
-/opt/splunk/bin/splunk start --accept-license --answer-yes 
+sudo /opt/splunk/bin/splunk start --accept-license --answer-yes 
 
 #-auth $SPLUNK_USERNAME:$SPLUNK_PASSWORD
 
