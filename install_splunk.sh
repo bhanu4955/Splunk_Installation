@@ -12,7 +12,7 @@ INSTALL_DIR="/opt/splunk"
 curl -O $SPLUNK_URL
 
 # Extract Splunk
-sudo tar -xzf splunk-*.tgz -C /opt/splunk --strip-components=1
+tar -xzf splunk-*.tgz -C /opt/splunk --strip-components=1
 
 # Start Splunk with username and password
 sudo /opt/splunk/bin/splunk start --accept-license --answer-yes 
