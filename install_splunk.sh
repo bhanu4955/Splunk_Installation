@@ -17,3 +17,9 @@ sudo tar -xzf splunk-*.tgz -C $INSTALL_DIR --strip-components=1
 # Start Splunk with username and password
 sudo $INSTALL_DIR/bin/splunk start --accept-license --answer-yes -auth $SPLUNK_USERNAME:$SPLUNK_PASSWORD
 
+#Giving permissions
+chmod +x install_splunk.sh
+
+#Execution
+./install_splunk.sh
+
