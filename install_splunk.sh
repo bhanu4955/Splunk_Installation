@@ -7,13 +7,18 @@ INSTALL_DIR="/opt/splunk"
 sudo mkdir -p $INSTALL_DIR
 
 # Download Splunk
-sudo curl -O $SPLUNK_URL
+sudo wget -O $SPLUNK_URL
 
 # Extract Splunk
 sudo tar -xzf splunk-*.tgz -C $INSTALL_DIR --strip-components=1
+
+#permissions
+sudo chmod +x splunk-*.tgz
 
 # Start Splunk
 sudo $INSTALL_DIR/bin/splunk start --accept-license --answer-yes
 
 # Enable Splunk to start on boot
 sudo ${SPLUNK_DIR}/bin/splunk enable boot-start -user splunk
+
+
