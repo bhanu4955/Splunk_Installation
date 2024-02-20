@@ -2,21 +2,18 @@
 
 SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.2.0.1/linux/splunk-9.2.0.1-d8ae995bf219-Linux-x86_64.tgz"
 INSTALL_DIR="/opt/splunk"
-#SPLUNK_USERNAME="admin"
-#SPLUNK_PASSWORD="bhargavi23"
 
 # Create the installation directory
-mkdir -p $INSTALL_DIR
+sudo mkdir -p $INSTALL_DIR
 
 # Download Splunk
-curl -O $SPLUNK_URL
+sudo curl -O $SPLUNK_URL
 
 # Extract Splunk
-tar -xzf splunk-*.tgz -C $INSTALL_DIR --strip-components=1
+sudo tar -xzf splunk-*.tgz -C $INSTALL_DIR --strip-components=1
 
-# Start Splunk with username and password
-$INSTALL_DIR/bin/splunk start --accept-license --answer-yes 
+# Start Splunk
+sudo $INSTALL_DIR/bin/splunk start --accept-license --answer-yes
 
-#-auth $SPLUNK_USERNAME:$SPLUNK_PASSWORD
-
-
+# Enable Splunk to start on boot
+sudo ${SPLUNK_DIR}/bin/splunk enable boot-start -user splunk
