@@ -4,6 +4,6 @@ Open GitBash on your local system.
 Set your Git username and email using the following commands:
 dshdryend kdjkjnfdnf
 fdkfjdkfndm
-```bash
+```
 sudo su
 sudo apt install update
