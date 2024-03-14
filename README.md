@@ -15,7 +15,7 @@ https://gitforwindows.org/.
 ```
 GitHub Account: Create a GitHub account 
 ```
-https://github.com/) if you do not have one.
+https://github.com/ #if you do not have one.
 ```
 Deployment Steps
 1. Download and Unzip Splunk App.
