@@ -4,10 +4,19 @@ This documentation provides step-by-step instructions for deploying the Splunk a
 
 Prerequisites
 Before starting the deployment process, ensure that the following prerequisites are met:
-Splunk Account: Create an account on Splunkbase (https://splunkbase.splunk.com/app/1928) if you do not have one.
-GitBash: Install GitBash on your local system. You can download it from https://gitforwindows.org/.
-GitHub Account: Create a GitHub account (https://github.com/) if you do not have one.
-
+Splunk Account: Create an account on Splunkbase 
+```
+https://splunkbase.splunk.com/app/1928)
+```
+if you do not have one.
+GitBash: Install GitBash on your local system. You can download it from 
+```
+https://gitforwindows.org/.
+```
+GitHub Account: Create a GitHub account 
+```
+https://github.com/) if you do not have one.
+```
 Deployment Steps
 1. Download and Unzip Splunk App.
 Click on login to download..
